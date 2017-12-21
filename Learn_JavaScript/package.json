@@ -1,0 +1,11 @@
+{
+  "name": "learn_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "9_juggling_async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yura",
+  "license": "MIT"
+}

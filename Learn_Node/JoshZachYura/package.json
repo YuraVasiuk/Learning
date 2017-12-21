@@ -1,0 +1,15 @@
+{
+  "name": "joshzachyura",
+  "version": "1.0.0",
+  "description": "tieing to JoshZackYura-yura",
+  "main": "callback1.js",
+  "dependencies": {
+    "open": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yura",
+  "license": "MIT"
+}

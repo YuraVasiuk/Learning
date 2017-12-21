@@ -1,0 +1,20 @@
+{
+  "name": "async-you-yura",
+  "version": "1.0.0",
+  "description": "package file for tieing to async-you",
+  "main": "0_logic.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "async-each": "^1.0.1",
+    "d3-dsv": "^1.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yura",
+  "license": "MIT"
+}

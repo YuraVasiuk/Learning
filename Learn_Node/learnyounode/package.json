@@ -1,0 +1,19 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "10_t_s.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "bl": "^1.2.1",
+    "through2-map": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yura",
+  "license": "MIT"
+}
