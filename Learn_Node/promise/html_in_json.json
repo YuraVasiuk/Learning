@@ -1,0 +1,10 @@
+{
+    pages : [{
+        name: 'the best page.html',
+        html : "<html><head>alsdkf</head>"
+        },{
+        name: 'the best pages.html',
+        html : "<html><head>alssdkf</head>"
+        }   
+    ]
+}
