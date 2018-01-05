@@ -27,7 +27,8 @@ Promise.resolve(make_request('http://localhost:7000'))
     .then(make_url)
     .then(make_request)
     .then(parse_json)
-    .then(console.log, console.log);
+    .then(console.log)
+    .catch(console.log);
 
 // !!! it is good to have the OFFICIAL SOLUTION for comparison
 /*
@@ -43,3 +44,20 @@ var qhttp = require('q-io/http');
     .then(null, console.error)
     .done();
 */
+
+async function hi() {
+    try {
+        while (i < 5) {
+
+            var hi = await q_http.read(url);
+            var hi2 = await q_http.read(hi + 'asdfa');
+            i++;
+        }
+    } catch (e) {
+
+    }
+
+}
+
+hi();
+console.log('11');
