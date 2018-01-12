@@ -1,0 +1,130 @@
+body {
+    margin-left: 40px;
+}
+
+h3,
+h4 {
+    color: #ffffff;
+    width: 30%;
+    min-width: 700px;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.step::before {
+    font-family: serif;
+    position: relative;
+    right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 2%;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+}
+
+.step:after {
+    float: right;
+    background-size: 80px 35px;
+    width: 80px;
+    height: 35px;
+    content: "";
+}
+
+.one::before {
+    content: "1";
+}
+
+.two::before {
+    content: "2";
+}
+
+.three::before {
+    content: "3";
+}
+
+.four::before {
+    content: "4";
+}
+
+.five::before {
+    content: "5";
+}
+
+.one,
+.one::before {
+    background-color: #596492;
+}
+
+.two,
+.two::before {
+    background-color: #48977A;
+}
+
+.three,
+.three::before {
+    background-color: #3299AC;
+}
+
+.four,
+.four::before {
+    background-color: #AC5F31;
+}
+
+.five,
+.five::before {
+    background-color: #798A53;
+}
+
+.one::after {
+    background-image: url(images/after/Step1.png);
+}
+
+.two::after {
+    background-image: url(images/after/Step2.png);
+}
+
+.three::after {
+    background-image: url(images/after/Step3.png);
+}
+
+.four::after {
+    background-image: url(images/after/Step4.png);
+}
+
+.five::after {
+    background-image: url(images/after/Step5.png);
+}
+
+/* tablets */
+
+@media screen and (max-width: 960px) {
+    body {
+        margin-left: 20px;
+    }
+    h3,
+    h4 {
+        width: 50%;
+        min-width: 450px;
+        font-size: 1em;
+    }
+
+    .step::after {
+        background-size: 40px 17px;
+        width: 40px;
+        height: 17px;
+    }
+}
+
+/* smart phones */
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-right: 20px;
+    }
+    h3,
+    h4 {
+        width: 100%;
+        min-width: 330px;
+    }
+}
