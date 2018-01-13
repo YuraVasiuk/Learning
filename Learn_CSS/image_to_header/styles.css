@@ -2,19 +2,23 @@ body {
     margin-left: 40px;
 }
 
-h3,
-h4 {
+.step {
     color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    height: 50px;
+    padding-bottom: 20px;
     width: 30%;
     min-width: 700px;
-    font-size: 2em;
-    font-family: 'Raleway', sans-serif;
+    line-height: 60px;
 }
 
 .step::before {
     font-family: serif;
+    font-size: 2.5em;
     position: relative;
     right: 4%;
+    top: 5px;
     padding-left: 2%;
     padding-right: 2%;
     margin-right: 2%;
@@ -25,9 +29,9 @@ h4 {
 
 .step:after {
     float: right;
-    background-size: 80px 35px;
-    width: 80px;
-    height: 35px;
+    background-size: 100px 70px;
+    width: 100px;
+    height: 70px;
     content: "";
 }
 
@@ -102,17 +106,19 @@ h4 {
     body {
         margin-left: 20px;
     }
-    h3,
-    h4 {
+    .step {
+        font-size: 1em;
+        height: 25px;
+        padding-bottom: 10px;
         width: 50%;
         min-width: 450px;
-        font-size: 1em;
+        line-height: 30px;
     }
 
     .step::after {
-        background-size: 40px 17px;
-        width: 40px;
-        height: 17px;
+        background-size: 50px 35px;
+        width: 50px;
+        height: 35px;
     }
 }
 
@@ -122,9 +128,8 @@ h4 {
     body {
         margin-right: 20px;
     }
-    h3,
-    h4 {
+    .step {
         width: 100%;
-        min-width: 330px;
+        min-width: 350px;
     }
 }
