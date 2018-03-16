@@ -13,4 +13,8 @@
   "keywords": [],
   "author": "Yura Vasiuk",
   "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuraVasiuk/Learning/tree/master/Learn_Node/express"
+  },
 }
