@@ -1,0 +1,16 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Learning Express.js in NodeSchool",
+  "main": "1-hello-world.js",
+  "dependencies": {
+    "expressworks": "^3.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yura Vasiuk",
+  "license": "MIT"
+}
