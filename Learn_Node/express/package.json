@@ -1,0 +1,20 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Learnign Express.js framework at NodeSchool",
+  "main": "1-hello-world.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuraVasiuk/Learning/tree/master/Learn_Node/express"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
