@@ -7,12 +7,62 @@
 /*eslint no-unused-vars:1*/
 /*eslint no-console:0*/
 
-console.log(html`<b>${process.argv[2]} says</b>: "${process.argv[3]}"`);
+// HTML Escape helper utility
+var util = (function () {
+  // Thanks to Andrea Giammarchi
+  var
+    reEscape = /[&<>'"]/g,
+    reUnescape = /&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g,
+    oEscape = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      "'": '&apos;',
+      '"': '&quot;'
+    },
+    oUnescape = {
+      '&amp;': '&',
+      '&#38;': '&',
+      '&lt;': '<',
+      '&#60;': '<',
+      '&gt;': '>',
+      '&#62;': '>',
+      '&apos;': "'",
+      '&#39;': "'",
+      '&quot;': '"',
+      '&#34;': '"'
+    },
+    fnEscape = function (m) {
+      return oEscape[m];
+    },
+    fnUnescape = function (m) {
+      return oUnescape[m];
+    },
+    replace = String.prototype.replace
+  ;
+  return (Object.freeze || Object)({
+    escape: function escape(s) {
+      return replace.call(s, reEscape, fnEscape);
+    },
+    unescape: function unescape(s) {
+      return replace.call(s, reUnescape, fnUnescape);
+    }
+  });
+}());
 
-function html(username, comment) {
-    var safe_string = username + comment;
-    
-    return safe_string;
+// Tagged template function
+function html(pieces) {
+    var result = pieces[0];
+    var substitutions = [].slice.call(arguments, 1);
+    for (var i = 0; i < substitutions.length; ++i) {
+        result += util.escape(substitutions[i]) + pieces[i + 1];
+    }
+
+    return result;
 }
 
 console.log(html`<b>${process.argv[2]} says</b>: "${process.argv[3]}"`);
+
+
+
+
